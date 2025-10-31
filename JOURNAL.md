@@ -14,5 +14,5 @@ necessary image:
 ![fish-spinning](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzA0MywicHVyIjoiYmxvYl9pZCJ9fQ==--dc70b71d9148baaaeae1f6f3538a2a93e02b6b40/fish-spinning.gif)
 
 
-I am writing this slightly after I started the project and designed the RAM and ALU.   
+I am writing this after I started the project and designed the RAM and ALU.   
 
