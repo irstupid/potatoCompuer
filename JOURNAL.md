@@ -25,3 +25,11 @@ here is my final design (it might a little change once I design the instruction 
 
 this was written after I designed the ALU  
 
+## 10/31/2025 2 PM - Designing the ALU  
+
+the ALU seemed like the second Simplest thing to design, and despite hurting my brain with simple addition it mostly was. it took a little review to make the adders and how subtraction works still hurts my brain. I decided to use and and not gates instead of a 3 to 8 decoder because 3 to 8 decoders are kinda expensive but now that hackclubs paying for this i might switch it back for simplicity, constancy, and expand-ability. also because of that I got confused and drew the wires a little wrong, so this isn't the final drawing or iteration really.
+
+my final (ish) design (once again, will probably change a little once I design the instruction processes)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzE0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--6d4cbb86e033fe71d6c690d01f8bae3434d96399/image.png)
+  
+
