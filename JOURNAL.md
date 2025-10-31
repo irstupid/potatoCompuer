@@ -6,7 +6,7 @@
   ==================================================================
 -->
 
-## 10/31/2025 - step 1: figure out what im actually doing  
+## 10/31/2025 11 AM - step 1: figure out what im actually doing  
 
 Ok so I know I want to design my own computer, I have some background knowledge on how computers works, I have made some basic logic gate circuits before, I kinda know what I'm doing, but I have no idea what I am actually going to do. so I spent a long time staring at a piece of paper trying to figure out how everything is going to work. I will spare you the details of my thought process, but I ended up deciding on 3 bits because I'm making this out of individual logic gates and every extra bit is more work, i decided to make a hard wired ROM instead of using a EEPROM or something because they were really really expensive and complicated. i also decided on an instruction set of 4 instructions, jump, write, switch, and configure, which is kind of weird but i will explain it more in detail once i design to the instruction processor, and a 8 bit instruction size, so that I can address two 3 bit RAM addresses or one 6 bit ROM address. there are also a few other kinks like a weird graphics mode and 4 swappable RAM banks, but I will cover those once I get to them.
 
@@ -15,4 +15,13 @@ necessary image:
 
 
 I am writing this after I started the project and designed the RAM and ALU.   
+
+## 10/31/2025 1 PM - Designing the RAM  
+
+I started by designing the RAM because I though it would be the easiest component, and it was. there are a few weird things about it though. first of all there are 4 RAM banks that you can swap in and out. I did this to increase memory space without having to have a bigger address bus. data can't directly switch between different banks, but address 0, 1, and 2 will always be the registers, so you can transfer data between the banks that way. the address bus is also pretty weird. it has a 3 bit write address and a 3 bit read address, the write address just writes that address to the bus, and the read address sets the value of that address to whatever's on the bus. I did it this way to minimize complexity and instructions, but it does require me to do some devious hacks later.
+
+here is my final design (it might a little change once I design the instruction processer)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzEzMiwicHVyIjoiYmxvYl9pZCJ9fQ==--1c2cc9ace83efc93a2524fc5a8ddac51c1621ab3/image.png)
+
+this was written after I designed the ALU  
 
